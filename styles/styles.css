@@ -1,6 +1,7 @@
 body {
     background-color: whitesmoke;
     font-family: "Lato", sans-serif;
+    margin: 0;
 }
 
 #contenedor {
@@ -9,6 +10,7 @@ body {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
 }
 
 #contenedor-flex-column {
@@ -18,6 +20,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
+    padding-bottom: 30px;
 }
 
 #subcontenedor {
@@ -51,7 +54,15 @@ body {
 }
 
 #header-img {
-    width: 40%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#img2 {
+    width: 30%;
+    align-items: center;
+    display: flex;
 }
 
 iframe {
@@ -77,7 +88,7 @@ iframe {
     background-color: gainsboro;
 }
 
-#submit {
+#submit, #selection {
     background-color: gold;
     border: none;
     font-weight: bold;
@@ -86,26 +97,46 @@ iframe {
     padding-right: 13px;
 }
 
+#selection {
+    margin-bottom: 10px;
+}
+
 #form {
     text-align: center;
 }
 
+#head-flex {
+    position: fixed;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#cuerpo {
+    padding-top: 100px;
+}
+
 ul {
-    list-style-type: note;
+    list-style-type: none;
     margin: 0;
-    padding: 0;  
+    padding: 0%;
 }
 
 li {
-    display: inline;
     float: right;
 }
 
 a {
     display: block;
     padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
-#header {
-    position: fixed;
+#foot {
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: right;
 }
